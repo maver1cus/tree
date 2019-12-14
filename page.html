@@ -1,0 +1,590 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Index page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="format-detection" content="telephone=no" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="css/app.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+      ymaps.ready(init);
+
+      function init()
+      {
+        var myMap = new ymaps.Map("map",
+        {
+          center: [55.75108756, 37.59786348],
+          zoom: 10
+        });
+        var myPlacemark = new ymaps.Placemark([55.71718645, 37.18147580],
+        {},
+        {
+          preset: 'islands#redIcon'
+        });
+      }
+
+    </script>
+  </head>
+  <body>
+    <!-- BEGIN content -->
+    <div class="wrap">
+      <div class="top-line">
+        <div class="top-line__wrap">
+          <div class="top-line__logo">
+            <img src="img/logo.png" alt="" />
+          </div>
+          <div class="top-line__column">
+            <div class="top-line__caption">Есть вопросы? Звоните!</div>
+            <a href="tel:84994041431" class="top-line__phone">+7 (499) 404-14-31</a>
+            <a href="tel:88002004017" class="top-line__phone">8 (800) 200-40-17</a>
+          </div>
+          <div class="top-line__column">
+            <a href="info@elockagori.ru" class="top-line__mail">info@elockagori.ru</a>
+            <button class="top-line__btn">ЗАКАЗАТЬ ЗВОНОК</button>
+          </div>
+        </div>
+      </div>
+      <nav class="main-menu">
+        <ul class="main-menu__list">
+          <li class="main-menu__item"><a href="#" class="main-menu__link">Искусственные елки</a></li>
+          <li class="main-menu__item"><a href="#" class="main-menu__link">Живые елки</a></li>
+          <li class="main-menu__item"><a href="#" class="main-menu__link">Елочки из конфет</a></li>
+          <li class="main-menu__item"><a href="#" class="main-menu__link">Украшения для елок</a></li>
+        </ul>
+      </nav>
+      <header class="page-header" style="background-image: url(img/bg-header.jpg);">
+        <div class="page-header__wrap">
+          <h1 class="page-header__title"><span>Используйте все возможности</span> <br> <span class="small">приближающегося праздника!</span></h1>
+          <p class="page-header__sub-title">Закажите новогодний набор сейчас и получите <br>дополнительную скидку <b>15%</b> от оптовых цен!</p>
+          <form action="#" class="page-header__order header-order">
+            <div class="header-order__title">ПОЛУЧИ ОПТОВЫЕ ЦЕНЫ СЕЙЧАС</div>
+            <input type="text" placeholder="Ваше имя" class="header-order__input" />
+            <input type="text" placeholder="Ваш телефон" class="header-order__input" />
+            <input type="submit" value="СКАЧАТЬ ПРАЙС" class="header-order__btn" />
+          </form>
+        </div>
+      </header>
+      <section class="about screen">
+        <div class="about__wrap">
+          <h2 class="title">о нас</h2>
+          <ul class="about__list">
+            <li class="about__item">
+              <span class="about__icon about__icon--award"></span>
+              <b>Мы производители</b><br /> Вы получите гарантию<br /> лучших цен </li>
+            <li class="about__item">
+              <span class="about__icon about__icon--truck"></span>
+              <b>Бесплатная доставка</b><br /> по всей России </li>
+            <li class="about__item">
+              <span class="about__icon about__icon--wallet"></span>
+              <b>Ниже оптовых цен</b><br /> конкурентов на 17-23%<br />
+            </li>
+            <li class="about__item">
+              <span class="about__icon about__icon--home"></span>
+              <b>163000 семей</b><br /> встретили 2015 год<br /> с нами </li>
+          </ul>
+        </div>
+      </section>
+      <section class="order screen" style="background-image: url(img/bg-order.jpg);">
+        <div class="order__wrap">
+          <form action="#" class="order__form">
+            <h2 class="order__title">Закажите до 10 ноября</h2>
+            <div class="order__sub-title">на сумму от 100 000 рублей <br> и получите дополнительную скидку 15%</div>
+            <p class="order__text">В декабре скидка 5%</p>
+            <input type="text" placeholder="Ваше имя" class="order__input" />
+            <input type="text" placeholder="Ваш телефон" class="order__input" />
+            <input type="submit" value="ОСТАВИТЬ ЗАЯВКУ" class="order__btn" />
+          </form>
+        </div>
+        <div class="order__footer"> У нас уже заказали:<span class="order__count"><span>1</span><span>5</span></span>человек </div>
+      </section>
+      <section class="set screen" style="background-image: url(img/bg-set.jpg);">
+        <div class="set__wrap">
+          <h2 class="title title--invert set__title">Наши эффективные наборы</h2>
+          <div class="sub-title sub-title--invert set__sub-title">Мы разработали для Вас готовые наборы на основе статистики наших клиентов!</div>
+          <ul class="set__list">
+            <li class="set__item">
+              <div class="set__image">
+                <img src="img/set.jpg" alt="">
+              </div>
+              <ul class="set__composition">
+                <li>40 см. - 100 шт.</li>
+                <li>80 см. - 50 шт.</li>
+                <li>1500 см. - 30 шт.</li>
+                <li>2000 см. - 50 шт.</li>
+              </ul>
+              <div class="set__description">
+                <p>Срок реализации - <b>1 месяц</b></p>
+                <p>Ваша закупка - <b>1 месяц</b></p>
+                <p>Ваша закупка - <b>1 месяц</b></p>
+                <button class="set__btn">оставить заявку</button>
+              </div>
+            </li>
+            <li class="set__item">
+              <div class="set__image">
+                <img src="img/set.jpg" alt="" />
+              </div>
+              <ul class="set__composition">
+                <li>40 см. - 100 шт.</li>
+                <li>80 см. - 50 шт.</li>
+                <li>1500 см. - 30 шт.</li>
+                <li>2000 см. - 50 шт.</li>
+              </ul>
+              <div class="set__description">
+                <p>Срок реализации - <b>1 месяц</b></p>
+                <p>Ваша закупка - <b>1 месяц</b></p>
+                <p>Ваша закупка - <b>1 месяц</b></p>
+                <button class="set__btn">оставить заявку</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="reviews screen">
+        <div class="reviews__wrap">
+          <h2 class="title reviews__title">Отзывы о нас</h2>
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <div class="reviews__image">
+                <img src="img/reviews.jpg" alt="" />
+              </div>
+              <div class="reviews__description">
+                <div class="reviews__bio">
+                  <p>Имя:.............</p>
+                  <p>Заказывал:.............</p>
+                  <p>Сумма заказа:..........</p>
+                </div>
+                <div class="reviews__text">
+                  <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов</p>
+                  <button class="reviews__btn">Заказать этот же набор</button>
+                </div>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__image">
+                <img src="img/reviews.jpg" alt="" />
+              </div>
+              <div class="reviews__description">
+                <div class="reviews__bio">
+                  <p>Имя:.............</p>
+                  <p>Заказывал:.............</p>
+                  <p>Сумма заказа:..........</p>
+                </div>
+                <div class="reviews__text">
+                  <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов</p>
+                  <button class="reviews__btn">Заказать этот же набор</button>
+                </div>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__image">
+                <img src="img/reviews.jpg" alt="" />
+              </div>
+              <div class="reviews__description">
+                <div class="reviews__bio">
+                  <p>Имя:.............</p>
+                  <p>Заказывал:.............</p>
+                  <p>Сумма заказа:..........</p>
+                </div>
+                <div class="reviews__text">
+                  <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов</p>
+                  <button class="reviews__btn">Заказать этот же набор</button>
+                </div>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__image">
+                <img src="img/reviews.jpg" alt="" />
+              </div>
+              <div class="reviews__description">
+                <div class="reviews__bio">
+                  <p>Имя:.............</p>
+                  <p>Заказывал:.............</p>
+                  <p>Сумма заказа:..........</p>
+                </div>
+                <div class="reviews__text">
+                  <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов</p>
+                  <button class="reviews__btn">Заказать этот же набор</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="production screen">
+        <div class="production__wrap">
+          <h2 class="production__title"></h2>
+          <ul class="production__list">
+            <li class="production__item">
+              <div class="production__image"><img src="img/production-1.jpg" alt="" /></div>
+              <div class="production__description">
+                <p>Контроль качества продукции</p>
+              </div>
+            </li>
+            <li class="production__item">
+              <div class="production__image"><img src="img/production-2.jpg" alt="" /></div>
+              <div class="production__description">
+                <p>Пример выкладки</p>
+              </div>
+            </li>
+            <li class="production__item">
+              <div class="production__image"><img src="img/production-3.jpg" alt="" /></div>
+              <div class="production__description">
+                <p>Сопутствующие товары</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="product screen" style="background-image: url(img/product-artificial.jpg);">
+        <div class="product__wrap">
+          <h2 class="title title--invert product__title">Каталог искусственных елок</h2>
+          <ul class="product__list">
+            <li class="product__item card-product">
+              <div class="card-product__image">
+                <img src="img/product.jpg" alt="" />
+              </div>
+              <div class="card-product__description">
+                <h3 class="card-product__title">Датская ёлка <br />(1-1,25 метров)</h3>
+                <p class="card-product__text">Небольшое описание елок <br />на 2 строки.</p>
+                <ul class="card-product__price">
+                  <li>Цена за 10 шт. - <b>1 500 руб.</b></li>
+                  <li>Цена за 50 шт. - <b>5 500 руб.</b></li>
+                  <li>Цена за 100 шт. - <b>11 500 руб.</b></li>
+                </ul>
+              </div>
+              <button class="card-product__btn">оставить заявку</button>
+            </li>
+            <li class="product__item card-product">
+              <div class="card-product__image">
+                <img src="img/product.jpg" alt="" />
+              </div>
+              <div class="card-product__description">
+                <h3 class="card-product__title">Датская ёлка <br />(1-1,25 метров)</h3>
+                <p class="card-product__text">Небольшое описание елок <br />на 2 строки.</p>
+                <ul class="card-product__price">
+                  <li>Цена за 10 шт. - <b>1 500 руб.</b></li>
+                  <li>Цена за 50 шт. - <b>5 500 руб.</b></li>
+                  <li>Цена за 100 шт. - <b>11 500 руб.</b></li>
+                </ul>
+              </div>
+              <button class="card-product__btn">оставить заявку</button>
+            </li>
+            <li class="product__item card-product">
+              <div class="card-product__image">
+                <img src="img/product.jpg" alt="" />
+              </div>
+              <div class="card-product__description">
+                <h3 class="card-product__title">Датская ёлка <br />(1-1,25 метров)</h3>
+                <p class="card-product__text">Небольшое описание елок <br />на 2 строки.</p>
+                <ul class="card-product__price">
+                  <li>Цена за 10 шт. - <b>1 500 руб.</b></li>
+                  <li>Цена за 50 шт. - <b>5 500 руб.</b></li>
+                  <li>Цена за 100 шт. - <b>11 500 руб.</b></li>
+                </ul>
+              </div>
+              <button class="card-product__btn">оставить заявку</button>
+            </li>
+            <li class="product__item card-product">
+              <div class="card-product__image">
+                <img src="img/product.jpg" alt="" />
+              </div>
+              <div class="card-product__description">
+                <h3 class="card-product__title">Датская ёлка <br />(1-1,25 метров)</h3>
+                <p class="card-product__text">Небольшое описание елок <br />на 2 строки.</p>
+                <ul class="card-product__price">
+                  <li>Цена за 10 шт. - <b>1 500 руб.</b></li>
+                  <li>Цена за 50 шт. - <b>5 500 руб.</b></li>
+                  <li>Цена за 100 шт. - <b>11 500 руб.</b></li>
+                </ul>
+              </div>
+              <button class="card-product__btn">оставить заявку</button>
+            </li>
+            <li class="product__item card-product">
+              <div class="card-product__image">
+                <img src="img/product.jpg" alt="" />
+              </div>
+              <div class="card-product__description">
+                <h3 class="card-product__title">Датская ёлка <br />(1-1,25 метров)</h3>
+                <p class="card-product__text">Небольшое описание елок <br />на 2 строки.</p>
+                <ul class="card-product__price">
+                  <li>Цена за 10 шт. - <b>1 500 руб.</b></li>
+                  <li>Цена за 50 шт. - <b>5 500 руб.</b></li>
+                  <li>Цена за 100 шт. - <b>11 500 руб.</b></li>
+                </ul>
+              </div>
+              <button class="card-product__btn">оставить заявку</button>
+            </li>
+            <li class="product__item card-product">
+              <div class="card-product__image">
+                <img src="img/product.jpg" alt="" />
+              </div>
+              <div class="card-product__description">
+                <h3 class="card-product__title">Датская ёлка <br />(1-1,25 метров)</h3>
+                <p class="card-product__text">Небольшое описание елок <br />на 2 строки.</p>
+                <ul class="card-product__price">
+                  <li>Цена за 10 шт. - <b>1 500 руб.</b></li>
+                  <li>Цена за 50 шт. - <b>5 500 руб.</b></li>
+                  <li>Цена за 100 шт. - <b>11 500 руб.</b></li>
+                </ul>
+              </div>
+              <button class="card-product__btn">оставить заявку</button>
+            </li>
+            <li class="product__item card-product">
+              <div class="card-product__image">
+                <img src="img/product.jpg" alt="" />
+              </div>
+              <div class="card-product__description">
+                <h3 class="card-product__title">Датская ёлка <br />(1-1,25 метров)</h3>
+                <p class="card-product__text">Небольшое описание елок <br />на 2 строки.</p>
+                <ul class="card-product__price">
+                  <li>Цена за 10 шт. - <b>1 500 руб.</b></li>
+                  <li>Цена за 50 шт. - <b>5 500 руб.</b></li>
+                  <li>Цена за 100 шт. - <b>11 500 руб.</b></li>
+                </ul>
+              </div>
+              <button class="card-product__btn">оставить заявку</button>
+            </li>
+            <li class="product__item card-product">
+              <div class="card-product__image">
+                <img src="img/product.jpg" alt="" />
+              </div>
+              <div class="card-product__description">
+                <h3 class="card-product__title">Датская ёлка <br />(1-1,25 метров)</h3>
+                <p class="card-product__text">Небольшое описание елок <br />на 2 строки.</p>
+                <ul class="card-product__price">
+                  <li>Цена за 10 шт. - <b>1 500 руб.</b></li>
+                  <li>Цена за 50 шт. - <b>5 500 руб.</b></li>
+                  <li>Цена за 100 шт. - <b>11 500 руб.</b></li>
+                </ul>
+              </div>
+              <button class="card-product__btn">оставить заявку</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="product screen">
+        <div class="product__wrap">
+          <h2 class="title product__title">Каталог живых елок</h2>
+          <ul class="product__list">
+            <li class="product__item card-product">
+              <div class="card-product__image">
+                <img src="img/product.jpg" alt="" />
+              </div>
+              <div class="card-product__description">
+                <h3 class="card-product__title">Датская ёлка <br />(1-1,25 метров)</h3>
+                <p class="card-product__text">Небольшое описание елок <br />на 2 строки.</p>
+                <ul class="card-product__price">
+                  <li>Цена за 10 шт. - <b>1 500 руб.</b></li>
+                  <li>Цена за 50 шт. - <b>5 500 руб.</b></li>
+                  <li>Цена за 100 шт. - <b>11 500 руб.</b></li>
+                </ul>
+              </div>
+              <button class="card-product__btn">оставить заявку</button>
+            </li>
+            <li class="product__item card-product">
+              <div class="card-product__image">
+                <img src="img/product.jpg" alt="" />
+              </div>
+              <div class="card-product__description">
+                <h3 class="card-product__title">Датская ёлка <br />(1-1,25 метров)</h3>
+                <p class="card-product__text">Небольшое описание елок <br />на 2 строки.</p>
+                <ul class="card-product__price">
+                  <li>Цена за 10 шт. - <b>1 500 руб.</b></li>
+                  <li>Цена за 50 шт. - <b>5 500 руб.</b></li>
+                  <li>Цена за 100 шт. - <b>11 500 руб.</b></li>
+                </ul>
+              </div>
+              <button class="card-product__btn">оставить заявку</button>
+            </li>
+            <li class="product__item card-product">
+              <div class="card-product__image">
+                <img src="img/product.jpg" alt="" />
+              </div>
+              <div class="card-product__description">
+                <h3 class="card-product__title">Датская ёлка <br />(1-1,25 метров)</h3>
+                <p class="card-product__text">Небольшое описание елок <br />на 2 строки.</p>
+                <ul class="card-product__price">
+                  <li>Цена за 10 шт. - <b>1 500 руб.</b></li>
+                  <li>Цена за 50 шт. - <b>5 500 руб.</b></li>
+                  <li>Цена за 100 шт. - <b>11 500 руб.</b></li>
+                </ul>
+              </div>
+              <button class="card-product__btn">оставить заявку</button>
+            </li>
+            <li class="product__item card-product">
+              <div class="card-product__image">
+                <img src="img/product.jpg" alt="" />
+              </div>
+              <div class="card-product__description">
+                <h3 class="card-product__title">Датская ёлка <br />(1-1,25 метров)</h3>
+                <p class="card-product__text">Небольшое описание елок <br />на 2 строки.</p>
+                <ul class="card-product__price">
+                  <li>Цена за 10 шт. - <b>1 500 руб.</b></li>
+                  <li>Цена за 50 шт. - <b>5 500 руб.</b></li>
+                  <li>Цена за 100 шт. - <b>11 500 руб.</b></li>
+                </ul>
+              </div>
+              <button class="card-product__btn">оставить заявку</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="product screen" style="background-image: url(img/bg-candies.jpg);">
+        <div class="product__wrap">
+          <h2 class="title title--invert product__title">КАТАЛОГ ЕЛОЧЕК ИЗ КОНФЕТ</h2>
+          <ul class="product__list">
+            <li class="product__item card-product">
+              <div class="card-product__image">
+                <img src="img/product.jpg" alt="" />
+              </div>
+              <div class="card-product__description">
+                <h3 class="card-product__title">Датская ёлка <br />(1-1,25 метров)</h3>
+                <p class="card-product__text">Небольшое описание елок <br />на 2 строки.</p>
+                <ul class="card-product__price">
+                  <li>Цена за 10 шт. - <b>1 500 руб.</b></li>
+                  <li>Цена за 50 шт. - <b>5 500 руб.</b></li>
+                  <li>Цена за 100 шт. - <b>11 500 руб.</b></li>
+                </ul>
+              </div>
+              <button class="card-product__btn">оставить заявку</button>
+            </li>
+            <li class="product__item card-product">
+              <div class="card-product__image">
+                <img src="img/product.jpg" alt="" />
+              </div>
+              <div class="card-product__description">
+                <h3 class="card-product__title">Датская ёлка <br />(1-1,25 метров)</h3>
+                <p class="card-product__text">Небольшое описание елок <br />на 2 строки.</p>
+                <ul class="card-product__price">
+                  <li>Цена за 10 шт. - <b>1 500 руб.</b></li>
+                  <li>Цена за 50 шт. - <b>5 500 руб.</b></li>
+                  <li>Цена за 100 шт. - <b>11 500 руб.</b></li>
+                </ul>
+              </div>
+              <button class="card-product__btn">оставить заявку</button>
+            </li>
+            <li class="product__item card-product">
+              <div class="card-product__image">
+                <img src="img/product.jpg" alt="" />
+              </div>
+              <div class="card-product__description">
+                <h3 class="card-product__title">Датская ёлка <br />(1-1,25 метров)</h3>
+                <p class="card-product__text">Небольшое описание елок <br />на 2 строки.</p>
+                <ul class="card-product__price">
+                  <li>Цена за 10 шт. - <b>1 500 руб.</b></li>
+                  <li>Цена за 50 шт. - <b>5 500 руб.</b></li>
+                  <li>Цена за 100 шт. - <b>11 500 руб.</b></li>
+                </ul>
+              </div>
+              <button class="card-product__btn">оставить заявку</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="product screen">
+        <div class="product__wrap">
+          <h2 class="title product__title">Каталог украшений для елок</h2>
+          <ul class="product__list">
+            <li class="product__item card-product">
+              <div class="card-product__image">
+                <img src="img/product.jpg" alt="" />
+              </div>
+              <div class="card-product__description">
+                <h3 class="card-product__title">Датская ёлка <br />(1-1,25 метров)</h3>
+                <p class="card-product__text">Небольшое описание елок <br />на 2 строки.</p>
+                <ul class="card-product__price">
+                  <li>Цена за 10 шт. - <b>1 500 руб.</b></li>
+                  <li>Цена за 50 шт. - <b>5 500 руб.</b></li>
+                  <li>Цена за 100 шт. - <b>11 500 руб.</b></li>
+                </ul>
+              </div>
+              <button class="card-product__btn">оставить заявку</button>
+            </li>
+            <li class="product__item card-product">
+              <div class="card-product__image">
+                <img src="img/product.jpg" alt="" />
+              </div>
+              <div class="card-product__description">
+                <h3 class="card-product__title">Датская ёлка <br />(1-1,25 метров)</h3>
+                <p class="card-product__text">Небольшое описание елок <br />на 2 строки.</p>
+                <ul class="card-product__price">
+                  <li>Цена за 10 шт. - <b>1 500 руб.</b></li>
+                  <li>Цена за 50 шт. - <b>5 500 руб.</b></li>
+                  <li>Цена за 100 шт. - <b>11 500 руб.</b></li>
+                </ul>
+              </div>
+              <button class="card-product__btn">оставить заявку</button>
+            </li>
+            <li class="product__item card-product">
+              <div class="card-product__image">
+                <img src="img/product.jpg" alt="" />
+              </div>
+              <div class="card-product__description">
+                <h3 class="card-product__title">Датская ёлка <br />(1-1,25 метров)</h3>
+                <p class="card-product__text">Небольшое описание елок <br />на 2 строки.</p>
+                <ul class="card-product__price">
+                  <li>Цена за 10 шт. - <b>1 500 руб.</b></li>
+                  <li>Цена за 50 шт. - <b>5 500 руб.</b></li>
+                  <li>Цена за 100 шт. - <b>11 500 руб.</b></li>
+                </ul>
+              </div>
+              <button class="card-product__btn">оставить заявку</button>
+            </li>
+            <li class="product__item card-product">
+              <div class="card-product__image">
+                <img src="img/product.jpg" alt="" />
+              </div>
+              <div class="card-product__description">
+                <h3 class="card-product__title">Датская ёлка <br />(1-1,25 метров)</h3>
+                <p class="card-product__text">Небольшое описание елок <br />на 2 строки.</p>
+                <ul class="card-product__price">
+                  <li>Цена за 10 шт. - <b>1 500 руб.</b></li>
+                  <li>Цена за 50 шт. - <b>5 500 руб.</b></li>
+                  <li>Цена за 100 шт. - <b>11 500 руб.</b></li>
+                </ul>
+              </div>
+              <button class="card-product__btn">оставить заявку</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contacts" style="background-image: url(img/map.jpg);">
+        <div id="map"></div>
+        <div class="contacts__wrap">
+          <div class="contacts__caption">
+            <h2 class="contacts__title">КОНТАКТЫ</h2>
+            <ul class="contacts__list">
+              <li class="contacts__item contacts__item--adres">Москва, Павелецкая наб., <br />дом 2, строение 5</li>
+              <li class="contacts__item contacts__item--hour">Работаем без выходных <br /> с 9:00 до 18:00</li>
+              <li class="contacts__item contacts__item--phone">8 (499) 136-44-76</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="top-line">
+        <div class="top-line__wrap">
+          <div class="top-line__logo">
+            <img src="img/logo.png" alt="" />
+          </div>
+          <div class="top-line__column">
+            <div class="top-line__caption">Есть вопросы? Звоните!</div>
+            <a href="tel:84994041431" class="top-line__phone">+7 (499) 404-14-31</a>
+            <a href="tel:88002004017" class="top-line__phone">8 (800) 200-40-17</a>
+          </div>
+          <div class="top-line__column">
+            <a href="info@elockagori.ru" class="top-line__mail">info@elockagori.ru</a>
+            <button class="top-line__btn">ЗАКАЗАТЬ ЗВОНОК</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+</html>
