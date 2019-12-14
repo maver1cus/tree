@@ -8,13 +8,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="theme-color" content="#fff"/>
     <meta name="format-detection" content="telephone=no"/>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link rel="stylesheet" media="all" href="css/app.css"/>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+      ymaps.ready(init);
+      function init() {
+        var myMap = new ymaps.Map("map", {
+          center: [55.75108756, 37.59786348],
+          zoom: 10
+        });
+        var myPlacemark = new ymaps.Placemark([55.71718645, 37.18147580], {}, {
+          preset: 'islands#redIcon'
+        });
+      }
+    </script>
     {# {% include "../partials/_media-tags.html" %} #}
   </head>
   <body>
 
     <!-- BEGIN content -->
-    <div class="out">
+    <div class="wrap">
       {% block content %}{% endblock %}
     </div>
     <!-- END content -->

@@ -1,0 +1,56 @@
+.contacts
+	background-size: cover
+	background-position: 50% 0
+	background: no-repeat
+	position: relative
+	&__wrap
+		+container
+		padding: 30px 0
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+	&__caption
+		width: 440px
+		background-color: #fff
+		padding: 60px
+		z-index: 20
+	&__title
+		color: #000000
+		font-family: "PT Sans"
+		font-size: 30px
+		font-weight: 700
+		line-height: 1
+		margin-bottom: 50px
+	&__list
+		margin: -20px 0
+	&__item
+		padding-left: 52px
+		color: #000000
+		font-family: "PT Sans"
+		font-size: 18px
+		line-height: 1.2
+		font-weight: 400
+		margin: 20px 0
+		position: relative
+		&::before
+			display: block
+			content: ''
+			+icon-location
+			position: absolute
+			left: 0
+			top: -8px
+		&__adres
+		&--hour
+			&::before
+				+icon-clock
+				top: 0
+		&--phone
+			font-size: 22px
+			font-weight: 700
+			&::before
+				+icon-phone
+				top: 0
+#map
+	height: 430px
+	width: 100%

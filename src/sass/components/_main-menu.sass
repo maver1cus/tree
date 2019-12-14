@@ -1,0 +1,33 @@
+.main-menu
+	background-color: #3da001
+	position: sticky
+	top: 0px
+	z-index: 100
+	&__list
+		display: flex
+		justify-content: center
+		padding: 12px 0 11px 0
+	&__item
+		margin: 0 15px
+	&__link
+		color: #ffffff
+		font-family: "PT Sans"
+		font-size: 18px
+		font-weight: 400
+		text-decoration: none
+		line-height: 1
+		position: relative
+		&::after
+			display: block
+			content: ''
+			height: 1px
+			background-color: #fff
+			position: absolute
+			left: 0%
+			right: 0%
+			bottom: -1px
+			transition: 1s all
+		&:hover
+			&::after
+				left: 50%
+				right: 50%

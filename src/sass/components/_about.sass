@@ -1,0 +1,44 @@
+.about
+	&__wrap
+		+container
+	&__list
+		margin: 0 - 10px
+		display: flex
+		justify-content: center
+		align-items: center
+	&__item
+		flex: 1 0 220px
+		margin: 0 10px
+		text-align: center
+		font-family: "PT Sans"
+		font-size: 18px
+		font-weight: 400
+		text-align: center
+		line-height: 1.2
+		b
+			font-weight: 700
+	&__icon
+		display: block
+		width: 100px
+		height: 100px
+		border: 2px solid #368c02
+		position: relative
+		margin: 0 auto 30px auto
+		border-radius: 50%
+		&::after
+			display: block
+			content: ''
+			position: absolute
+			+icon-award
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+		&--truck
+			&::after
+				+icon-truck
+		&--wallet
+			&::after
+				+icon-wallet
+		&--home
+			&::after
+				+icon-home

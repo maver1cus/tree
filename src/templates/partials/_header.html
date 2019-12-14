@@ -1,1 +1,9 @@
-<p>Hello from partials/_header.html</p>
+
+<header class="page-header" style="background-image: url(img/bg-header.jpg);">
+  <div class="page-header__wrap">
+    <h1 class="page-header__title"><span >Используйте все возможности</span> <br> <span class="small">приближающегося праздника!</span></h1>
+    <p class="page-header__sub-title">Закажите новогодний набор сейчас и получите <br>дополнительную скидку <b>15%</b> от оптовых цен!</p>
+    {% include "partials/_header-order.html" %}
+  </div>
+</header>
+
